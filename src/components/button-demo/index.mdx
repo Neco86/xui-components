@@ -1,0 +1,46 @@
+---
+name: Button
+route: /Button
+order: 3
+sidebar: true
+---
+
+import { Playground } from 'docz'
+import Button from './index'
+
+# Button
+
+#### Basic Usage
+<Playground>
+    <Button>button</Button><br />
+    <Button type="primary">primary</Button><br />
+    <Button type="warning">warning</Button><br />
+    <Button type="info">info</Button><br />
+    <Button type="common">按钮</Button><br />
+</Playground>
+
+#### Block Button
+<Playground>
+    <div style={{width: '360px'}}>
+        <Button block>button</Button><br />
+        <Button type="primary" block>primary</Button><br />
+        <Button type="warning" block>warning</Button><br />
+        <Button type="info" block>info</Button><br />
+        <Button type="common" block>default</Button><br />
+    </div>
+</Playground>
+
+## 用法
+
+``` js
+import { Button } from 'xui-components'
+
+<Button type="primary" />
+```
+
+## API
+|  参数  |  说明  |  类型  |  默认值  |
+|  ---   |  ---  |  ---  |  ---  |
+|  className  |  自定义类名  |  string  |  |
+|  type  |  按钮类型 primary | warning | info | default | pure  |  string  |  default  |
+|  onClick  |  点击事件回调  |  func  |  |

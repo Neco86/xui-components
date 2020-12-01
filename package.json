@@ -1,0 +1,44 @@
+{
+  "name": "xui-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "./es/index.d.ts",
+  "scripts": {
+    "start": "father doc dev",
+    "doc:build": "father doc build",
+    "doc:deploy": "father doc deploy",
+    "build": "father build",
+    "test": "father test",
+    "test:coverage": "father test --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xitengfei/xui-components.git"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "author": "tengfei.xi",
+  "license": "MIT",
+  "homepage": "https://github.com/xitengfei/xui-components#xui-components",
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.11",
+    "@types/vfile-message": "^2.0.0",
+    "babel-plugin-import": "^1.13.1",
+    "father": "^2.29.11",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.3.0",
+    "@babel/runtime": "^7.12.5",
+    "antd": "^4.8.5",
+    "classnames": "^2.2.6"
+  }
+}
